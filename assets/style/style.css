@@ -58,7 +58,7 @@ main.container section.categorias {
     justify-content: center;
     align-content: center;
     gap: 3rem;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 div.itens {
@@ -66,11 +66,21 @@ div.itens {
     max-height: 12.4rem;
     max-width: 12rem;
     text-align: center;
+    border-radius: 10px;
+    transition: ease 100ms;
+}
+
+div.itens:hover {
+    backdrop-filter: blur(0);
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: ease 100ms;
 }
 
 section.categorias .itens a {
     font-size: 5rem;
     color: #fff;
+    display: block;
 }
 
 section.categorias .itens h2 {
@@ -80,25 +90,25 @@ section.categorias .itens h2 {
 }
 
 div.content {
-    text-align: center;
     padding-top: 3.2rem;
 }
 
 div.content .social-media a{
     display: inline-block;
     transition: ease 200ms;
-}
-
-div.content .social-media .icon i {
-    font-size: 2.4rem;
-    color: #fff;
-    margin: 1.5rem;
-    transition: 200ms ease;
+    margin: 0 1rem;
 }
 
 div.content .social-media a:hover{
     transform: scale(1.2);
 }
+
+div.content .social-media .icon i {
+    font-size: 2.4rem;
+    color: #fff;
+    transition: 200ms ease;
+}
+
 
 
 footer.rodape h3 {
